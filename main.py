@@ -32,21 +32,6 @@ class Bot(BaseBot):
       
     async def on_chat(self, user: User, message: str) -> None:
         print(f"{user.username}: {message}")  
-
-        if message.startswith("!dj") or message.startwith("/dj"):
-          if "____Rayen____" or user.username == "superhotgirll" or user.username == "eva__63":
-            await self.highrise.teleport(user.id, Position(6.0 , 14.25 , 3.0))
-
-        if message.startswith("!vip") or message.startwith("/vip"):
-          if "____Rayen____" or user.username == "ShoKytoo" or user.username == "eva__63":
-            await self.highrise.teleport(user.id, Position(16.5 , 13.75 , 27.0))
-
-        if message.startswith("!down") or message.startwith("/down"):
-          if "____Rayen____" or user.username == "superhotgirll" or user.username == "eva__63":
-            await self.highrise.teleport(user.id, Position(12.0 ,1.25 , 23.0))
-
-        if message.startswith("!teles") or message.startwith("/teles"):
-            await self.highrise.send_whisper(user.id,"TELES: dj |vip | down")
             
         if message.startswith("/fish"):
             await self.highrise.send_whisper(user.id,"Você Está Pescando 🎣...")
